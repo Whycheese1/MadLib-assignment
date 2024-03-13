@@ -1,0 +1,25 @@
+######################
+#MadLib Assignment
+#Jarrett Sanderson
+#March 12 2024
+#
+#Focus: EasyGUI, F-String, Formatting, Lists
+#
+#   Step 1: Create a simple Madlib which takes info from the user to create a short response. (10-15)
+#
+#   Step 2: Create a MadLib which asks for multiple values from user, and uses random input to create the final response.
+#######################
+
+import easygui as easy
+
+userQuestions = ["tell me an adjective"]
+animalQuestion = ["tell me an animal you roast"]
+RoomQuestion = ["tell me a room inside a house"]
+
+for x in range(len(userQuestions)):
+    adjective1 = easy.enterbox(userQuestions[x], "Madlib")
+    adjective2 = easy.enterbox(userQuestions[x], "Madlib")
+    bird = easy.enterbox(animalQuestion[x], "Madlib")
+    room = easy.enterbox(RoomQuestion[x], "Madlib")
+
+print(f"It was a {adjective1}, cold November day. I woke up to the {adjective2} smell of {bird} roasting in the {room} downstairs.")
