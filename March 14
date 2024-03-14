@@ -1,0 +1,50 @@
+######################
+#MadLib Assignment
+#Jarrett Sanderson
+#March 12 2024
+#
+#Focus: EasyGUI, F-String, Formatting, Lists
+#
+#   Step 1: Create a simple Madlib which takes info from the user to create a short response. (10-15)
+#
+#   Step 2: Create a MadLib which asks for multiple values from user, and uses random input to create the final response.
+#######################
+
+import easygui as easy
+
+userQuestions = ["tell me an adjective"]
+animalQuestion = ["tell me an animal you roast"]
+RoomQuestion = ["tell me a room inside a house"]
+past_tense_verbQuestion = ["Tell me a past tense verb please :3"]
+verbQuestion = ["tell me a regular verb now"]
+nameQuestion = ["Tell me your relative's name."]
+nounQuestion = ["Tell me a noun"]
+noun2Question = ["Tell me another noun"]
+liquidQuestion = ["tell me a liquid"]
+verb_with_ing = ["Tell me a verb ending in 'ing'."]
+verb_with_ing2 = ["Tell me a again verb ending in 'ing'."]
+plural_body_pt = ["Tell me a body part in plural form."]
+plural_noun = ["Tell me a plural noun."]
+
+for x in range(len(userQuestions)):
+    adjective1 = easy.enterbox(userQuestions[x], "Madlib")
+    adjective2 = easy.enterbox(userQuestions[x], "Madlib")
+    bird = easy.enterbox(animalQuestion[x], "Madlib")
+    room = easy.enterbox(RoomQuestion[x], "Madlib")
+    past_tense_verb = easy.enterbox(past_tense_verbQuestion[x], "Madlib")
+    Verb = easy.enterbox(verbQuestion[x], "Madlib")
+    name = easy.enterbox(nameQuestion[x], "Madlib")
+    noun = easy.enterbox(nounQuestion[x], "Madlib")
+    noun2 = easy.enterbox(noun2Question[x], "Madlib")
+    liquid = easy.enterbox(liquidQuestion[x], "Madlib")
+    verb_with_ing = easy.enterbox(verb_with_ing[x], "Madlib")
+    verb_with_ing2 = easy.enterbox(verb_with_ing2[x], "Madlib")
+    plural_body_pt = easy.enterbox(plural_body_pt[x], "Madlib")
+    plural_noun = easy.enterbox(plural_noun[x], "Madlib")
+    
+print(f"It was a {adjective1}, cold November day."\
+      f"I woke up to the {adjective2} smell of {bird} roasting in the {room} downstairs."\
+      f"I {past_tense_verb} down the stairs to see if i could help {Verb} the dinner. My mom said,"\
+      f"See if {name} needs a fresh {noun}. So i carried a tray of glasses full of {liquid} into the {verb_with_ing} room."\
+      
+      f"When i got there, i couldn't believe my {plural_body_pt}! There were {plural_noun} {verb_with_ing2} on the {noun2}")
